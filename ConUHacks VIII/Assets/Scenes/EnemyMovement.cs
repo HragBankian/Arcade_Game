@@ -76,7 +76,9 @@ public class EnemyMovement : MonoBehaviour
             // Change the color to black
             if (spriteRenderer != null)
             {
-                spriteRenderer.color = Color.black;
+                Color newColor = spriteRenderer.color;
+                newColor.a = 0f; // Set alpha to 0 (fully transparent)
+                spriteRenderer.color = newColor;
             }
         }
     }

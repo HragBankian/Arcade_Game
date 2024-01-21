@@ -263,6 +263,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerSecond: 40
+  attackInterval: 1
+--- !u!61 &876770396
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876770386}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1188112384 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3448466151230642345, guid: 76e376f7556e8174f88075c4414840e2, type: 3}
@@ -314,7 +360,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -369,6 +415,10 @@ PrefabInstance:
       propertyPath: enemyPrefab
       value: 
       objectReference: {fileID: 1188112384}
+    - target: {fileID: 4117629471253990474, guid: 49c0bb96b56b5454ea9d2b04f9595252, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4456870979035172034, guid: 49c0bb96b56b5454ea9d2b04f9595252, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.75217813
@@ -495,6 +545,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2140214512657191644, guid: 33f60ce0f92cef7489b5eaabb1cad9c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 876770392}
+    - targetCorrespondingSourceObject: {fileID: 2140214512657191644, guid: 33f60ce0f92cef7489b5eaabb1cad9c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 876770396}
   m_SourcePrefab: {fileID: 100100000, guid: 33f60ce0f92cef7489b5eaabb1cad9c1, type: 3}
 --- !u!1001 &5418822229952152013
 PrefabInstance:
