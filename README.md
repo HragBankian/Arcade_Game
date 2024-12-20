@@ -1,3 +1,3 @@
 # Arcade Game
 
-2D arcade shooter developped in the context of ConUHAcks VIII (hackathon).
+2D arcade shooter developped in the context of ConUHAcks VIII (hackathon) using C# and Unity.
